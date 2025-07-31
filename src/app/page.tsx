@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import * as Lucide from 'lucide-react'
 import { ArrowRight, Star, Truck, ShieldCheck, RefreshCw } from 'lucide-react'
 
 import { motion } from 'framer-motion'
@@ -58,7 +57,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="inline-flex items-center justify-center h-11 px-8 rounded-md bg-white text-purple-600 hover:bg-gray-100">
-                  Shop Now <Lucide.ArrowRight className="ml-2 h-5 w-5" />
+                  Shop Now <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
                 <button className="inline-flex items-center justify-center h-11 px-8 rounded-md border border-white text-white hover:bg-white hover:text-purple-600">
                   Learn More
@@ -162,7 +161,7 @@ export default function HomePage() {
                       ₹{product.price.toLocaleString()}
                     </span>
                     <div className="flex items-center">
-                      <Lucide.Star className="h-4 w-4 text-yellow-400 fill-current" />
+                      <Star className="h-4 w-4 text-yellow-400 fill-current" />
                       <span className="text-sm text-gray-600 ml-1">{product.rating}</span>
                     </div>
                   </div>
@@ -175,7 +174,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link href="/products">
               <button className="inline-flex items-center justify-center h-11 px-8 rounded-md bg-purple-600 text-white hover:bg-purple-700">
-                View All Products <Lucide.ArrowRight className="ml-2 h-5 w-5" />
+                View All Products <ArrowRight className="ml-2 h-5 w-5" />
               </button>
             </Link>
           </div>
